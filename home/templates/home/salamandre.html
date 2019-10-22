@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}
+ABOUT
+{% endblock %}
+{% block static %}
+
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+
+{% endblock %}
+
+{% block container %}
+<div class="row background-white div-marge-space">
+    <div class="col">
+
+        <img src="../../../static/img/salamandre/20190330_130136.jpg" height="50%" width="90%" style="margin: 10px"/>
+
+        <p class="lead text-justify"> Le Domaine de la Salamandre vous accueille dans ces gîtes et chambres d'hôtes au plus près de
+            la nature. </p>
+        <ul>
+            <h5 class="title-green">Le domaine se compose de :</h5>
+        <li>quatre chambres d'hôtes</li>
+            <li>trois gîtes, actuellement en rénovation totale</li>
+            <li>des logements insolites, en cours de création.</li>
+            <li>une grande salle modulable, pouvant être louée pour des évènements divers.</li>
+        </ul>
+        <a href="https://www.domainedelasalamandre.com/vacances-a-la-ferme">
+        <button class="btn btn-success mx-auto"> Réserver votre séjour  </button>
+        </a>
+    </div>
+
+    <div class="col">
+        <h1 class="title-green text-lg"> Domaine de la salamande </h1>
+        <h1 class="title-green"><i> Simplement Nature</i></h1>
+        <p class="lead text-justify">Le Domaine se situe à 35 min de Périgueux dans un charmant petit village traversé
+            par la Laurence
+            nommé Auriac du Périgord. Le Domaine tend vers une autonomie la plus complète en eau, en énergies en
+            alimentation mais aussi en recyclage
+            des déchets. Ses habitants partagent l'idée de transmettre aux générations futures des valeurs autres que
+            celles
+            portées par
+            la société de consommation au travers d'un cadre de vie respectueux de la nature, de l'environnement et des
+            autres. </p>
+
+        <img src="../../../static/img/salamandre/20190330_130526.jpg" height="50%" width="85%" style="margin: 10px"/>
+    </div>
+</div>
+
+{% endblock %}

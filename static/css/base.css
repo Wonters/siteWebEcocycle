@@ -1,0 +1,80 @@
+.img-size {
+    width: 400px;
+}
+
+.own-navbar {
+
+    background: saddlebrown;
+}
+
+
+.carousel-inner {
+    color: black;
+    margin: auto;
+}
+
+.container {
+    margin: 5px;
+}
+
+
+.photoEcoCycle {
+    margin: 2px;
+    background-image: url('/static/img/EcoCycle.png') no-repeat center;
+    opacity: 0.5;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.color-brown {
+    color: saddlebrown;
+}
+
+.title-green {
+
+    color: green;
+    font-size: large;
+}
+
+.text-lg {
+    font-size: 80px;
+}
+
+.background-salamandre {
+    background: url("/static/img/salamandre/background.jpg") no-repeat center fixed ;
+    max-width: 100%;
+
+}
+
+.background-white {
+    background: white no-repeat fixed;
+}
+
+.div-marge-space {
+    margin: 10px 10px;
+    margin-top: 100px;
+}
+
+.footer{
+    background-color: white;
+}
+
+.floatable{
+    padding-bottom: 20px;
+    position: fixed;
+    animation: appeard 1s;
+
+}
+
+@keyframes appeard {
+    from{
+        position: relative;
+        top: -100%;
+    }
+    to {
+        position: fixed;
+        top: 0%;
+    }
+}

@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}
+
+CONTACT
+
+{% endblock %}
+
+{% block static %}
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+{% endblock %}
+
+{% block container %}
+<div class="title">
+    <strong>Contact</strong>
+</div>
+<div>
+    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+    <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=45.1249851,1.0941955&amp;spn=10,10&amp;t=m&amp;z=15&amp;output=embed"></iframe>
+</div>
+<div class="row block-white">
+    <div class="col">
+        <h1 class="font-weight-light"> AcTI, atelier partagé & bureaux </h1>
+
+        <p>Phone:
+            <strong>06 59 76 38 90</strong>
+        </p>
+        <p>Email:
+            <strong><a href="mailto:'tristan.herou@gmail.com'">tristan.herou@gmail.com</a></strong>
+        </p>
+
+    </div>
+    <div class="col">
+        <h1 class="font-weight-light"> Gîtes et chambres d'hôtes </h1>
+        <a href="https://www.domainedelasalamandre.com/contact">
+            <button class="btn btn-success mx-auto"> Contacter le domaine</button>
+        </a>
+    </div>
+    <div class="col">
+        <h1 class="font-weight-light"> Adresse </h1>
+    <p>
+        <strong>Ferme de Porcher, 24290
+            <br>Auriac-du-Périgord</strong>
+    </p>
+    </div>
+
+</div>
+
+<div hidden>
+    {% if envoi %}Votre message a bien été envoyé !{% endif %}
+    <form action="/home/envoieContact" role="form" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="row lead">
+            <div class="">
+                <label for="name">Name</label>
+                <input id="name" class="form-control" name="user_name"></input>
+            </div>
+            <div class="">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" name="user_email">
+            </div>
+            <div class="">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" name="user_phone"></input>
+            </div>
+        </div>
+        <div class="row">
+            <div class="">
+                <label for="message">Message</label>
+                <textarea id="message" name="user_message" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="mx-auto">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}
+

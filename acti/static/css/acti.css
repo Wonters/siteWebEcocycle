@@ -1,0 +1,74 @@
+.dot {
+    height: 10%;
+    width: 10%;
+    background-color: #396164;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+.btn-services {
+    padding: 30px;
+    margin: 5px;
+    color: aliceblue;
+    font-size: large;
+    font-family: "Academy Engraved LET";
+    background-color: #396164;
+    position: relative;
+
+}
+
+
+.btn-services:hover {
+    background-color: #19344f;
+    transform: rotate(10deg);
+    transition: all 1s;
+}
+
+
+.moove {
+    animation: moove 2s;
+}
+
+.service{
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    position: relative;
+    animation: simple-moove 1s;
+}
+
+#fablab {
+    animation-timing-function: ease;
+}
+
+#membres {
+    animation-timing-function: ease;
+}
+
+#mockup {
+    position: relative;
+    animation: simple-moove 2s;
+}
+
+@keyframes moove {
+    from {
+        background-color: beige;
+        left: -100%;
+    }
+    to {
+        background-color: #396164;
+        left: 0%;
+    }
+}
+
+@keyframes simple-moove {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+
+}
+

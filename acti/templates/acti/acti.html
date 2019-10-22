@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+
+{% block title %}
+ACTI
+{% endblock %}
+{% block static %}
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/acti.css"/>
+{% endblock %}
+
+{% block container %}
+<div class="font-weight-light color-brown mx-auto"
+     style="background: rgba(255,255,255,1); font-size:30px; padding: 10px">
+    <img class="mx-auto" src="../../../static/img/logos/AcTI-logo.png" style="max-width: 100%; ">
+    L'Atelier coopératif de Transition et d'Innovation
+</div>
+<div class="row">
+
+    <div id="mockup" class="mx-auto" style="padding: 20px">
+        <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active slider-size">
+                    <img src="../../../static/img/maquette/Mockup_artisan.png"
+                         style="max-width: 100%; max-height: 100%"/>
+                </div>
+                <div class="carousel-item  slider-size">
+                    <img src="../../../static/img/maquette/Mockup_cafe.png" style="max-width: 100%; max-height: 100%"/>
+                </div>
+                <div class="carousel-item  slider-size">
+                    <img src="../../../static/img/maquette/Mockup_coworking.png"
+                         style="max-width: 100%; max-height: 100%"/>
+                </div>
+                <div class="carousel-item  slider-size">
+                    <img src="../../../static/img/maquette/Mockup_environnement.png"
+                         style="max-width: 100%; max-height: 100%"/>
+                </div>
+                <div class="carousel-item  slider-size">
+                    <img src="../../../static/img/maquette/Mockup_fablab.png"
+                         style="max-width: 100%; max-height: 100%"/>
+                </div>
+                <div class="carousel-item  slider-size">
+                    <img src="../../../static/img/maquette/Mockup_paysan.png"
+                         style="max-width: 100%; max-height: 100%"/>
+                </div>
+            </div>
+            <a class="carousel-control-prev" style="color: black;" href="#carouselExampleIndicators" role="button"
+               data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" style="color: black;" href="#carouselExampleIndicators" role="button"
+               data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="block-white">
+        <p class="color-brown font-weight-light h1 mx-auto" style="align-content: center;">
+            Récup' & Connaissances, le savoir faire pour demain !
+        </p>
+        <p class="color-brown font-weight-light h2"> Présentation </p>
+        <p class="lead text-justify" id="presentation1">
+            AcTI se présente comme un atelier au coeur d'un espace culturel. Des activités pour tous les âges et
+            un lieu d'apprentissage, de travail et de création ouvert à tous. On y trouve des produits que ces membres
+            créer, des informations sur la transition et l'innovation.
+        </p>
+        <p class="lead text-justify" id="presentation2">
+            Cet espace est animé par l'association EcoCycle qui promeut l'autonomie, la relocalisation des savoir-faires
+            et l'économie local. Il est le maillon culturel de son quartier rural sur le domaine la Salamandre.
+            Si vous êtes intéréssez par le numérique, les métiers manuels, la réparation et la coopération, sachez que
+            vous êtes au bon endroit.
+
+        </p>
+    </div>
+
+
+    <div class="block-white">
+        <p class="color-brown font-weight-light h2"> Qu'est ce qu'on y trouve ? </p>
+        <p class="lead text-justify m-lg-auto">
+            On y trouve un FabLab, un espace de travail, un café associatif et une AMAP.
+            Ce lieu d’expérimentation au fonctionnement horizontal et ouvert à tous. Il rassemble une population
+            hétérogène et mobile en milieu rural. EcoCycle centré sur le DIY et la recherche est propice aux formations
+            numérique, aux énergies renouvelables, au compost et aux mesures physiques.
+            Les artistes, les télétravailleurs, les agriculteurs, les entrepreneurs, les PME, les artisans, les
+            retraités et les scolaires sont invités à
+            partager leurs connaissances et leurs savoirs sur place.
+        </p>
+        <p class="color-brown font-weight-light h2"> Qu'est ce qu'on y fait ? </p>
+        <p class="lead text-justify m-lg-auto">
+            A l’ouverture en août 2020, AcTI proposera une salle de 70m2 dédiée aux activités culturelles.
+            Vous pourrez consommer des produits locaux du domaine et d'ailleurs.
+            Un espace de travail de 50 m2 avec du matériel de reprographie. Un Fablab de 50m2 adapté à l’artisanat
+            numérique.
+        </p>
+    </div>
+
+    <div class="block-white" id="fabdescription">
+        <p class="color-brown font-weight-light h2"> FabLab, un atelier partagé et mobile </p>
+        <p class="lead text-justify">
+            Le FabLab à l’objectif de proposer à termes un atelier complet pour les artisans. Ce Fablab en lien avec la
+            recyclerie le pied allez triez, permettra de transformer les déchets en objects utile pour le quotidien.
+            Cela permettra aux scolaires et aux publics d’apprendre et de créer.
+            Une imprimante 3D, une découpe laser, une fraiseuse CNC, un petit tour, des équipements de mesures, un
+            établis et de l’outillage.
+            Une salle de 100 m2 permettant d’accueillir des conférences, des formations et des activités à l'occasion.
+
+        </p>
+    </div>
+</div>
+
+<div class="mx-auto" style="background: rgba(255,255,255,1); font-size:30px; padding: 30px; margin: 10px">
+    <div class="row">
+        <div class="mx-auto">
+            <button class="btn-services" onclick="showHidden('adhesions')" id="membres"> Devenir membre</button>
+            <button class="btn-services" onclick="showHidden('cafeServices')" id="espaceculturel"> La carte</button>
+            <button class="btn-services" onclick="showHidden('events')" id="evenement"> Les évènements</button>
+            <button class="btn-services" onclick="showHidden('fabServices')" id="fablab"> Le FABLAB</button>
+        </div>
+    </div>
+
+</div>
+<div class="mx-auto">
+    <div hidden class="service" id="adhesions">
+        <div class="row">
+            <div class="col">
+                <h1 class="font-weight-light color-brown"> Les Pass </h1>
+                {% for pas in pass %}
+                <div id="{{pas.nom}}">
+                    <div>
+                        <button class="btn-success"> {{pas.nom}} {{pas.prix}}</button>
+                        <p class="lead"> {{pas.description}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col">
+                <h1 class="font-weight-light color-brown"> S'abonner </h1>
+                <div id="fablab-adhesion">
+                    {% for abonnement in abonnements %}
+                    <div id="{{abonnement.type}}">
+                        <button class="btn-success"> {{abonnement.type}} {{abonnement.prix}}</button>
+                        <p class="lead"> {{abonnement.description}} </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div hidden class="service" id="fabServices">
+        <h1 class="font-weight-light color-brown"> Le FabLab (ouvert de 9h à 17h) </h1>
+        <p> Fermé le jeudi entre midi et 14h </p>
+        <div id="fablab-evenements">
+            {% for event in eventsFablab %}
+            <div id="event.nom">
+                <div class="row">
+                    <button class="btn-success"> {{event.nom}} {{event.prix}}€</button>
+                    <p class="lead">{{event.description}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div hidden class="service" id="cafeServices">
+        <div id="carte">
+            <h2 class="font-weight-light color-brown"> La carte </h2>
+            {% for produit in produits %}
+            <div>
+                <div class="row">
+                    <div class="col">
+                        <p class="lead">{{produit.nom}}</p>
+                    </div>
+                    <div class="col">
+                        <p class="lead">{{produit.prix}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+    <div hidden class="service" id="events">
+            <h2 class="font-weight-light color-brown"> Les évènements </h2>
+            {% for event in eventsCulturel %}
+            <div><p class="lead">{{event.nom}} {{event.prix}}€ </p></div>
+            <div><p class="lead">{{event.description}}</p></div>
+            {% endfor %}
+    </div>
+</div>
+
+
+<script src="/static/js/acti.js"></script>
+{% endblock %}

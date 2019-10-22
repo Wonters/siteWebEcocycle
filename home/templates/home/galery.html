@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title%}
+ARTICLES
+{% endblock %}
+
+{% block static %}
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+{% endblock %}
+
+{% block container %}
+<div class="block-white">
+    <h1> GALLERY </h1>
+</div>
+
+<!--{% for galery in galerys %}
+    <div class="block-white">
+    	<h3 class="font-weight-light">{{ galery.title }}</h3>
+        <div class="row">
+            <div class="col">
+                {{galery.photos.img.url}}
+                <img src="{{photo.img.url}}" style=" max-width: 100%;"/>
+                <p> {{galery.title}}</p>
+            </div>
+        </div>
+    </div>
+{% empty %}
+    <div class="block-white">Aucune gallerie.</div>
+{% endfor %}-->
+
+{% for photo in photos %}
+    <div class="block-white">
+    	<h3 class="font-weight-light">{{ photo.title }}</h3>
+        <div class="row">
+            <div class="col">
+                <img src="/static/{{photo.img.url}}" style=" max-width: 100%;"/>
+            </div>
+        </div>
+    </div>
+{% empty %}
+    <div class="block-white">Aucune photos.</div>
+{% endfor %}
+
+{% endblock %}

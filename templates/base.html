@@ -1,0 +1,101 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+
+<head>
+    <title> {% block title %} BASE {% endblock %} </title>
+    <link rel="shortcut icon" type="image/png" href="/static/img/logos/EcoCycle.png"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    {% block static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+    {% endblock %}
+</head>
+<!-- Navigation -->
+<nav style="padding-bottom: 10px">
+    <div><img src="/static/img/salamandre/img-background.png" style="max-width: 100%"></div>
+    <div class="own-navbar navbar navbar-expand-md navbar-dark fixed-top" id="menubar">
+        <a class="navbar-brand" href="/">EcoCycle
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">
+                        <div>
+                            <span class="glyphicon glyphicon-home"></span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        SERVICES
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/acti"> <img src="/static/img/logos/logo.png" style="max-width: 17%">Le tiers-lieu</a>
+                        <a class="dropdown-item" href="/salamandre"><img src="/static/img/logos/Salamandre.jpg" style="max-width: 15%"> Le domaine</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/vente"> Vente à la ferme</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/galery">GALERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">CONTACT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin">
+                        <div>
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <a href="https://www.facebook.com/EcoCycle-2317470971614411/"> <img src="/static/img/icons/facebook.png"
+                                                                            height="30" width="30"/> </a>
+<!--        <a class="nav-link" onclick="like()">
+            <div>
+                <span class="glyphicon glyphicon-thumbs-up" id="iconlike" style="font-size: 30px; color: white;"></span>
+                <input id="datalike" hidden value="{{like}}">
+                <div id="nblike">like</div>
+            </div>
+        </a>-->
+    </div>
+
+
+</nav>
+
+<body class="background-salamandre">
+<div>
+    {% block container %}
+
+    {% endblock %}
+</div>
+</body>
+<footer class="blockquote-footer mx-auto footer">
+
+    <img src="/static/img/logos/EcoCycle.png" height="50" width="50"/>
+    EcoCycle , Domaine de la Salamandre, Auriac du Périgord, 24290
+
+</footer>
+
+    <script src="/static/js/base.js"></script>
+
+

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title%}
+ARTICLES
+{% endblock %}
+
+{% block static %}
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+<link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+{% endblock %}
+
+{% block container %}
+<div class="block-white">
+    <h1>Bienvenue sur le blog d'EcoCycle !  </h1>
+    <h5>Vous y trouverez les articles publiés </h5>
+</div>
+
+<div class="block-white" style="text-align: center;">
+    <a href="{% url 'pdf' %}">
+    <button class="btn btn-success"> Voir les posts graphiques </button></a>
+</div>
+
+
+{% for article in derniers_articles %}
+    <div class="block-white">
+        <h5 class="font-weight-light">{{ article.date }}</h5>
+    	<h3 class="font-weight-light">{{ article.titre }}</h3>
+        <div class="row">
+            <div class="col">
+                <img src="/static/{{article.img.url}}" style="max-width: 100%"/>
+            </div>
+            <div class="col">
+                <p>{{ article.contenu|truncatewords_html:30 }}</p>
+                <p><a href="{% url 'lire' article.id %}">Lire la suite</a></p>
+            </div>
+        </div>
+    </div>
+{% empty %}
+    <div class="block-white">Aucun article.</div>
+{% endfor %}
+
+{% endblock %}
