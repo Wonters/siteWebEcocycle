@@ -3,10 +3,18 @@
 }
 
 .own-navbar {
-
     background: saddlebrown;
 }
 
+.dropdown-menu {
+    background-color: saddlebrown;
+}
+
+.dropdown-item {
+    font-family: Arial;
+    color: #d6d6d6;
+    filter: contrast(1);
+}
 
 .carousel-inner {
     color: black;
@@ -33,7 +41,6 @@
 }
 
 .title-green {
-
     color: green;
     font-size: large;
 }
@@ -43,9 +50,8 @@
 }
 
 .background-salamandre {
-    background: url("/static/img/salamandre/background.jpg") no-repeat center fixed ;
+    background: url("/static/img/salamandre/background.jpg") no-repeat center fixed;
     max-width: 100%;
-
 }
 
 .background-white {
@@ -57,19 +63,33 @@
     margin-top: 100px;
 }
 
-.footer{
+.footer {
     background-color: white;
 }
 
-.floatable{
+.floatable {
     padding-bottom: 20px;
     position: fixed;
     animation: appeard 1s;
 
 }
 
+.block-white {
+    background-color: rgba(255, 255, 255, .95);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.logo {
+    border-radius: 50%;
+    box-shadow: rgba(252, 252, 252, 0.69) 0px 0px 10px 5px;
+}
+
 @keyframes appeard {
-    from{
+    from {
         position: relative;
         top: -100%;
     }

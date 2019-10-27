@@ -21,7 +21,7 @@ function like() {
             dataType: 'json',
             data: {like: 1},
             success: function (data) {
-                console.log('user liked the site')
+                console.log('user liked the site');
                 divNblike = document.getElementById('nblike');
                 divNblike.innerHTML = data.nblike;
             },
