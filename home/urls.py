@@ -5,9 +5,13 @@ from .views import *
 urlpatterns = [
     path('', home, name='home'),
     path('contact', contact, name='contact'),
-    path('salamandre', salamandre, name='salamandre'),
+    path('gouvernance', gouvernance, name='salamandre'),
     path('envoieContact', envoie_contact, name='envoie'),
-    path('vente', vente),
+    path('recherche', recherche),
     path('galery', galery),
-    path('like', like)
+    path('declarationfondateur', declarationsFondateurs),
+    path('vision-missions', visionMissions),
+    path('adhesion', adhesion),
+    path('calendrier', calendrier),
+    path('dons', dons),
 ]

@@ -1,10 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+    Recherche
+{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+    <script src="/static/js/home.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+{% endblock %}
+
+
+{% block container %}
+
+
+    <div class="block-white">
+        <h1 class="font-weight-light color-brown text-lg" style="text-align: center"> La recherche </h1>
+        <p class="lead text-justify"> L'association propose une plateforme de recherche environnementale, sociale
+            et technique pour exploiter la thèse du quartier rural qui s'appuie sur un modèle agricole d'ubanisme.
+            L'objectif est de lever les verroux techniques auquels le quartier rurale fait face en suivant une démarche
+            itérative de régulation et d'évaluation. Cette rigeure permet de mesurer les différentes variables qui
+            importent
+            sur le lieu. De ces analyses, nous pourrons centrer notre attention sur les différents points à faire
+            évoluer et
+            apporter de l'innovation.
+        </p>
+    </div>
+
+    <div class="block-white">
+        <img src="/static/img/schemas/schemas-regulation.svg"></img>
+    </div>
+    <div class="block-white">
+        <h1 class="font-weight-light color-brown"> La recherche agricole</h1>
+        <p class="lead">
+            Ce pôle s'intérèsse aux différents ittinéraires techniques en maraîchage et en agroforesterie.
+            Il est en cours de développement et recherche actuellement des institutions pour travailler en
+            collaboration.
+        </p>
+    </div>
+    <div class="block-white">
+        <h1 class="font-weight-light color-brown"> La recherche en énergie et en eau</h1>
+        <p> En développement </p>
+    </div>
+{% endblock %}

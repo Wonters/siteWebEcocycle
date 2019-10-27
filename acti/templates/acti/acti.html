@@ -14,6 +14,7 @@ ACTI
      style="background: rgba(255,255,255,1); font-size:30px; padding: 10px">
     <img class="mx-auto" src="../../../static/img/logos/AcTI-logo.png" style="max-width: 100%; ">
     L'Atelier coopératif de Transition et d'Innovation
+<p class="lead" style="text-align: center;"> Un projet en cours de création sur Thenon, en Dordogne</p>
 </div>
 <div class="row">
 
@@ -68,7 +69,7 @@ ACTI
 
     <div class="block-white">
         <p class="color-brown font-weight-light h1 mx-auto" style="align-content: center;">
-            Récup' & Connaissances, le savoir faire pour demain !
+            Récup' & Connaissances, un lieu de partage et de création !
         </p>
         <p class="color-brown font-weight-light h2"> Présentation </p>
         <p class="lead text-justify" id="presentation1">
@@ -89,7 +90,7 @@ ACTI
     <div class="block-white">
         <p class="color-brown font-weight-light h2"> Qu'est ce qu'on y trouve ? </p>
         <p class="lead text-justify m-lg-auto">
-            On y trouve un FabLab, un espace de travail, un café associatif et une AMAP.
+            On y trouve un FabLab, un espace de travail et un café associatif.
             Ce lieu d’expérimentation au fonctionnement horizontal et ouvert à tous. Il rassemble une population
             hétérogène et mobile en milieu rural. EcoCycle centré sur le DIY et la recherche est propice aux formations
             numérique, aux énergies renouvelables, au compost et aux mesures physiques.
@@ -107,7 +108,7 @@ ACTI
     </div>
 
     <div class="block-white" id="fabdescription">
-        <p class="color-brown font-weight-light h2"> FabLab, un atelier partagé et mobile </p>
+        <p class="color-brown font-weight-light h2"> Un atelier partagé en développement </p>
         <p class="lead text-justify">
             Le FabLab à l’objectif de proposer à termes un atelier complet pour les artisans. Ce Fablab en lien avec la
             recyclerie le pied allez triez, permettra de transformer les déchets en objects utile pour le quotidien.
@@ -123,10 +124,10 @@ ACTI
 <div class="mx-auto" style="background: rgba(255,255,255,1); font-size:30px; padding: 30px; margin: 10px">
     <div class="row">
         <div class="mx-auto">
-            <button class="btn-services" onclick="showHidden('adhesions')" id="membres"> Devenir membre</button>
+            <button class="btn-services" onclick="showHidden('adhesions')" id="membres"> Les offres</button>
             <button class="btn-services" onclick="showHidden('cafeServices')" id="espaceculturel"> La carte</button>
-            <button class="btn-services" onclick="showHidden('events')" id="evenement"> Les évènements</button>
-            <button class="btn-services" onclick="showHidden('fabServices')" id="fablab"> Le FABLAB</button>
+            <button class="btn-services" onclick="showHidden('events')" id="evenement"> Le café </button>
+            <button class="btn-services" onclick="showHidden('fabServices')" id="fablab"> L'atelier </button>
         </div>
     </div>
 
@@ -139,7 +140,7 @@ ACTI
                 {% for pas in pass %}
                 <div id="{{pas.nom}}">
                     <div>
-                        <button class="btn-success"> {{pas.nom}} {{pas.prix}}</button>
+                        <button class="btn-success"> {{pas.nom}} {{pas.prix}} €</button>
                         <p class="lead"> {{pas.description}}</p>
                     </div>
                 </div>
@@ -150,7 +151,7 @@ ACTI
                 <div id="fablab-adhesion">
                     {% for abonnement in abonnements %}
                     <div id="{{abonnement.type}}">
-                        <button class="btn-success"> {{abonnement.type}} {{abonnement.prix}}</button>
+                        <button class="btn-success"> {{abonnement.type}} {{abonnement.prix}} €</button>
                         <p class="lead"> {{abonnement.description}} </p>
                     </div>
                     {% endfor %}
@@ -182,7 +183,7 @@ ACTI
                         <p class="lead">{{produit.nom}}</p>
                     </div>
                     <div class="col">
-                        <p class="lead">{{produit.prix}}</p>
+                        <p class="lead">{{produit.prix}} €</p>
                     </div>
                 </div>
             </div>

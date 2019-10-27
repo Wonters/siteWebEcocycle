@@ -1,10 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+    L'atelier mobile
+{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/acti.css"/>
+{% endblock %}
+
+{% block container %}
+
+    <div class="font-weight-light color-brown mx-auto"
+         style="background: rgba(255,255,255,1); font-size:30px; padding: 10px">
+        <img src="/static/img/AcTI/FabLabmobile.png" style="max-width: 100%">
+    </div>
+    <div class="block-white">
+        <h1 class="font-weight-light color-brown">L'atelier mobile</h1>
+        <p class="lead"> L’atelier coopératif de Transition et d’innovation se lance dans un repair café mobile. Le but
+            ? Partir à la rencontre de la population en proposant des activités scientifiques et numériques, des
+            conseils techniques et du café. Ce projet porté par l’association EcoCycle, permet de confronter les idées
+            d’un atelier partagé en Dordogne à la population.</p>
+    </div>
+
+    <div class="block-white">
+        <h1 class="font-weight-light color-brown">L'origine</h1>
+        <p class="lead">
+            Face à la société de consommation et l’obsolescence programmée des objets, deux frères amoureux de la
+            réparation et l’innovation ont décidé de réagir. Ensemble, ils ont imaginé leur atelier idéal : des
+            machines, des outils, des ordinateurs et du café. Ils créent leur paradis d’ingénieur réparateur à la fibre
+            écolo. Mais quelque chose manquait. Comment partager ce rêve avec le reste du monde ? La solution était
+            évidente : rendre l’atelier mobile !
+            Imaginez un endroit où vous pouvez à la fois travailler, découvrir apprendre et réparer tout en buvant du
+            café pur arabica, à deux pas de chez vous en Dordogne…
+        </p>
+    </div>
+        <div class="font-weight-light color-brown mx-auto"
+         style="background: rgba(255,255,255,1); font-size:30px; padding: 10px">
+        <img src="/static/img/AcTI/schema-camion.png" style="max-width: 100%; border-radius: 50px;">
+    </div>
+    <div class="block-white">
+        <h1 class="font-weight-light color-brown">Les objectifs
+        </h1>
+        <p class="lead">Faire découvrir l’univers des “makers” et du faire par soi-même</p>
+        <p class="lead">Apporter des notions théoriques en informatique et électronique </p>
+        <p class="lead">Créer une communauté de bricoleurs en Dordogne</p>
+        <p class="lead">Sensibiliser la population au recyclage et à l’autonomie </p>
+    </div>
+    <div class="block-white">
+        <img src="/static/img/AcTI/modele-service.png" style="max-width: 100%; border-radius: 50px">
+        <h1 class="font-weight-light color-brown">Du Repair Café au Tiers-lieu éphémère
+        </h1>
+        <p class="lead">Une fois par mois, le repair café s’installe le temps d’un weekend dans un village dordognais.
+            Une salle, un événement qui vous apprendra tout ce qu’il faut pour construire sa lampe à vélo, écrire ses
+            premières lignes de code, bien réussir son compost ou tout simplement réparer grâce à l’huile de coude !
+            Des intervenants qualifiés vous accueillent.
+        </p>
+    </div>
+    <div class="block-white">
+    <h1 class="font-weight-light color-brown">  Le camion
+        </h1>
+    <p class="lead">
+        Nous sommes actuellement à la recherche d'un camion utilitaire à réaménager de type ambulance.
+    </p>
+    </div>
+
+{% endblock %}

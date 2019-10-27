@@ -1,10 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+    Déclaration d'intention
+{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+    <script src="/static/js/home.js"></script>
+{% endblock %}
+
+{% block container %}
+    <div class="block-white lead" id="declaration">
+        <h1 class="color-brown font-weight-light text-center">Déclaration d'intention des fondateurs </h1>
+        <p class="text-justify">
+            L'association, constituée par les présents statuts, a vocation à être l'incarnation politique et associative
+            de notre « Projet EcoCycle du Domaine de la Salamandre » .</p>
+        <div class="moove">
+            <p class="text-justify">
+                → Il s'agit d'un projet d'éco-quartier rural (écohameau autonome en eau, énergie et alimentation)
+                construit autour :
+            </p>
+            <p class="text-justify">
+                ➢ d'un projet d'exploitation agricole (agroforesterie et maraîchage permaculturels) intégrée à
+                la zone d'habitation (haies mellifères, arbres fruitiers, petites parcelles de maraîchage/culture
+                de céréales, points d'eau autour de maisons passives semi-enterrées)</p>
+            <p class="text-justify">
+                ➢ d'un projet de gîtes/chambres d'hôtes (avec stages/conférences/ateliers/séminaires
+                autour de la santé/bien-être)
+            </p>
+            <p class="text-justify">
+                ➢ et d'un tiers-lieu (dans le cadre du projet associatif) ,
+            </p>
+            <p class="text-justify">
+                ➢ le tout faisant l'objet de projets de recherche-action en lien avec des instituts universitaires
+                (dans des domaines variés : agriculture, production d'énergies renouvelables et décentralisées,
+                sociologie, anthropologie, etc.).</p>
+        </div>
+        <p class="text-justify">
+            Ce projet d’implantation territoriale vise à promouvoir un nouveau modèle durable et sain de
+            développement et de revitalisation rurale en contribuant à l'animation locale de son lieu
+            d’implantation et en favorisant une économie sociale et solidaire ainsi que des partenariats de
+            recherche entre acteurs publics et privés.
+        </p>
+
+        <div class="moove">
+            <p class="text-justify">
+                En créant cette association, nous souhaitons :
+            </p>
+            <p class="text-justify">
+                ➢ développer, promouvoir et animer notre éco-quartier rural, porteur d'une autre vision
+                d'organisation sociétale, solidaire, respectueuse de la terre et du vivant et à taille humaine
+            </p>
+            <p class="text-justify">
+                ➢ ouvrir ce projet à d'autres personnes qui souhaiteraient s'y impliquer et le nourrir en
+                s'investissant notamment dans les différentes activités proposées sur le lieu et à l'extérieur;
+            </p>
+            <p class="text-justify">
+                ➢ faciliter la transmission de savoirs (savoir-être, savoir-faire et connaissances) en
+                privilégiant des formes d’éducations non-formelles.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="/static/js/scrolling.js"></script>
+
+
+{% endblock %}

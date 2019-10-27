@@ -5,7 +5,7 @@
 
 <head>
     <title> {% block title %} BASE {% endblock %} </title>
-    <link rel="shortcut icon" type="image/png" href="/static/img/logos/EcoCycle.png"/>
+    <link rel="shortcut icon" type="image/png" href="/static/img/logos/EcoCycle.png" style="border-radius: 50%"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,14 +14,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     {% block static %}
-    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+        <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
     {% endblock %}
 </head>
 <!-- Navigation -->
 <nav style="padding-bottom: 10px">
-    <div><img src="/static/img/salamandre/img-background.png" style="max-width: 100%"></div>
+    <div id="imgsitetop"><img src="/static/img/salamandre/img-background.png" style="max-width: 100%"></div>
     <div class="own-navbar navbar navbar-expand-md navbar-dark fixed-top" id="menubar">
-        <a class="navbar-brand" href="/">EcoCycle
+        <a class="navbar-brand" href="/">
+            <img src="/static/img/logos/EcoCycle.png" height="30" width="30" class="logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,27 +37,48 @@
                         </div>
                     </a>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
-                        SERVICES
+                        ASSOCIATION
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/acti"> <img src="/static/img/logos/logo.png" style="max-width: 17%">Le tiers-lieu</a>
-                        <a class="dropdown-item" href="/salamandre"><img src="/static/img/logos/Salamandre.jpg" style="max-width: 15%"> Le domaine</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/vente"> Vente à la ferme</a>
+                        <a class="dropdown-item" href="/declarationfondateur"> Déclaration d'intention des fondateurs </a>
+                        <a class="dropdown-item" href="/vision-missions"> Vision et missions </a>
+                        <a class="dropdown-item" href="/gouvernance"> Gourvernance </a>
+                        <a class="dropdown-item" href="/adhesion"> Adhérer </a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog"> BLOG </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/galery"> GALERY </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        AcTI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/acti"> Le tiers-lieu </a>
+                        <a class="dropdown-item" href="/acti/calendrier"> Calendrier </a>
+                        <a class="dropdown-item" href="/acti/abonnements"> Abonnements </a>
+                        <a class="dropdown-item" href="/acti/ateliermobile"> L'atelier mobile </a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/blog">BLOG</a>
+                    <a class="nav-link" href="/recherche"> RECHERCHE </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/calendrier"> CALENDRIER </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/galery">GALERY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">CONTACT</a>
+                    <a class="nav-link" href="/contact"> CONTACT </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/admin">
@@ -70,13 +92,6 @@
         </div>
         <a href="https://www.facebook.com/EcoCycle-2317470971614411/"> <img src="/static/img/icons/facebook.png"
                                                                             height="30" width="30"/> </a>
-<!--        <a class="nav-link" onclick="like()">
-            <div>
-                <span class="glyphicon glyphicon-thumbs-up" id="iconlike" style="font-size: 30px; color: white;"></span>
-                <input id="datalike" hidden value="{{like}}">
-                <div id="nblike">like</div>
-            </div>
-        </a>-->
     </div>
 
 
@@ -96,6 +111,6 @@
 
 </footer>
 
-    <script src="/static/js/base.js"></script>
+<script src="/static/js/base.js"></script>
 
 

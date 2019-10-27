@@ -1,10 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+    Calendrier AcTI
+{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/acti.css"/>
+{% endblock %}
+
+{% block container %}
+
+    <div class="block-white">
+        <h1 class="color-brown font-weight-bold">Calendrier du tiers-lieu</h1>
+    </div>
+    <div class="block-white">
+        <iframe src="https://calendar.google.com/calendar/embed?src=q3avdfe5g9sqsq27v3kpslils0%40group.calendar.google.com&ctz=Europe%2FParis"
+                style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    </div>
+{% endblock %}

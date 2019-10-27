@@ -9,15 +9,6 @@
 }
 
 
-.block-white{
-    background-color: rgba(255,255,255,.95);
-    padding: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
 .service{
     position: relative;
     animation: moove 1s ;
@@ -32,6 +23,16 @@ button{
     border-radius: 10px;
 }
 
+.moove{
+    position: relative;
+    animation: moove 2s;
+}
+
+.animate-rotation{
+    position: relative;
+    animation: animate-rotation 2s;
+}
+
 
 @keyframes moove {
     from{
@@ -39,5 +40,17 @@ button{
     }
     to{
         left: 0%;
+    }
+}
+
+@keyframes animate-rotation {
+    from {
+        left: -100%;
+        transform: scale(0.1);
+
+    }
+    to {
+        left: 0%;
+        transform:  scale(1);
     }
 }

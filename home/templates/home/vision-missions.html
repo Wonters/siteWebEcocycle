@@ -1,10 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
 
-</body>
-</html>
+{% block title %}
+Vision et missions
+{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/base.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/static/css/home.css"/>
+    <script src="/static/js/home.js"></script>
+{% endblock %}
+
+{% block container %}
+
+    <div class="block-white animate-rotation">
+        <h1 class="font-weight-light color-brown">Les buts de l'association </h1>
+        <p class="lead">
+            L'association à pour but incarner une vision d'organisation sociétale à taille humaine, solidaire, et
+            respectueuse de la terre et du
+            vivants
+            Contribuer à l’animation et à la transformation sociale, économique et écologique de notre territoire
+            d'implantation
+        </p>
+    </div>
+
+    <div class="block-white animate-rotation">
+        <h1 class="color-brown font-weight-light">
+            Nos objectifs
+        </h1>
+        <p class="lead">
+            Développer et partager l'animation d'un eco-quartier rural </p>
+        <p class="lead">Promouvoir une économie circulaire locale, le zéro déchets, les énergies renouvelables et les
+            basses
+            technologies.</p>
+
+        <p class="lead">Participer à l'animation locale de notre territoire </p>
+
+        <p class="lead"> Favoriser le partage de connaissances et de moyens de production, le faire par soi-même,
+            l’ingénierie
+            participative et l’innovation rurale</p>
+
+        <p class="lead">Concevoir et proposer un modèle sain et durable de revitalisation rurale</p>
+
+        <p class="lead">Fédérer un ecosystème collaboratif en relation avec les acteurs du territoire (artisans,
+            agriculteurs,
+            entreprises, associations, collectivités, habitants ...)</p>
+
+    </div>
+
+    <div class="block-white animate-rotation">
+        <h1 class="color-brown font-weight-light">
+            Nos moyens d'actions
+        </h1>
+        <p class="lead">
+            Des événements organisés sur l'éco-quartier rural (portes ouvertes, animation/sensibilisation, résidence
+            d'artistes) et des interventions à l'extérieur</p>
+
+        <p class="lead"> Des projets de recherche-action en partenariat avec des acteurs publics et privés français ou
+            étranger
+
+        </p>
+        <p class="lead"> Une gouvernance partagée qui permet à chaque membre de trouver sa place et d’être force de
+            proposition
+
+        </p>
+        <p class="lead"> Un tiers lieu, ayant pour nom « Atelier coopératif de Transition et d'Innovation» et
+            acronyme AcTI,
+            destiné à être un espace de partage, de transmission des savoirs et d’innovations
+        </p>
+    </div>
+
+{% endblock %}

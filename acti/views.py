@@ -17,3 +17,12 @@ def home(request):
 
     return render(request, 'acti/acti.html', {'produits': produits,'abonnements':abonnementsFablabs,'pass':passBureauxs,
                                               'eventsCulturel':evenementsCulturels,'eventsFablab':evenementsFablabs})
+
+def calendrier(request):
+
+    return render(request, 'acti/calendrier.html')
+
+
+def atelierMobile(request):
+
+    return render(request, 'acti/atelier-mobile.html')

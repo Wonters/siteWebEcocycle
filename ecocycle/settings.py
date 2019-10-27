@@ -132,3 +132,9 @@ STATICFILES_DIRS = [os.path.join('', 'static/'),
                     os.path.join('acti', 'static/'),
                     os.path.join('blog', 'static/'),
                     ]
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'ecocycle.domaine.salamandre@gmail.com'
+EMAIL_HOST_PASSWORD = 'EcoCycle12098'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
